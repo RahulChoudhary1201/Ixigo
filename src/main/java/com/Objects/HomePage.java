@@ -8,7 +8,7 @@ import com.utils.ActionWeb;
 
 public class HomePage extends ActionWeb {
 
-	private WebDriver driver;
+	public WebDriver driver;
 
 	public HomePage(WebDriver driver) {
 		super(driver);
@@ -24,7 +24,7 @@ public class HomePage extends ActionWeb {
 	private By clearBtn = By
 			.xpath("(//div[@class='clear-input ixi-icon-cross'])[1]");
 	private By suggestedEle = By.xpath("(//div[@data-acindex='0'])[1]");
-	private By sEleDestination = By.xpath("(//div[@data-acindex=\"0\"])[2]");
+	private By sEleDestination = By.xpath("(//div[@data-acindex='0'])[2]");
 	private By monthYear = By.xpath("//div[@class='rd-month-label']");
 	private By nextBtn = By.xpath("//button[@class='ixi-icon-arrow rd-next']");
 	private By passNumber = By.xpath(
@@ -67,11 +67,12 @@ public class HomePage extends ActionWeb {
 		dayEle.click();
 	}
 
-	public void setPassAndClass() {
+	public FlightSearchResult setPassAndClass() {
 		waiting(driver.findElement(passNumber));
 		driver.findElement(passNumber).click();
 		driver.findElement(className).click();
 		driver.findElement(searchBtn).click();
+		return new FlightSearchResult(driver);
 	}
 
 }
