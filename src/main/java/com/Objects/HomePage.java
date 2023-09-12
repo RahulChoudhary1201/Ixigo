@@ -42,7 +42,7 @@ public class HomePage extends ActionWeb {
 		waiting(driver.findElement(suggestedEle));
 		driver.findElement(suggestedEle).click();
 		Type(driver.findElement(dest), destination);
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		driver.findElement(sEleDestination).click();
 	}
 

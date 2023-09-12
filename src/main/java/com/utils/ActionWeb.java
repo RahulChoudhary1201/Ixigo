@@ -2,6 +2,7 @@ package com.utils;
 
 import java.time.Duration;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -23,4 +24,14 @@ public class ActionWeb {
 		wait.until(ExpectedConditions.visibilityOf(ele));
 	}
 
+	public void waitingForTitle(String title) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		wait.until(ExpectedConditions.titleContains(title));
+	}
+	
+	public void navigateToHome() {
+		driver.findElement(By.id("ixiLogoImg")).click();
+		waitingForTitle("ixigo - Best Travel Website, Book Flights, Trains & Buses Online");
+	}
+	
 }
