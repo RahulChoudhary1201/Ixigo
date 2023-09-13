@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-12T14:27:27 IST" name="Suite" finished-at="2023-09-12T14:28:05 IST" duration-ms="37914">
+  <suite started-at="2023-09-13T10:58:12 IST" name="Suite" finished-at="2023-09-13T10:59:06 IST" duration-ms="53460">
     <groups>
     </groups>
-    <test started-at="2023-09-12T14:27:27 IST" name="Test" finished-at="2023-09-12T14:28:05 IST" duration-ms="37914">
+    <test started-at="2023-09-13T10:58:12 IST" name="Test" finished-at="2023-09-13T10:59:06 IST" duration-ms="53460">
       <class name="com.testrunner.HomePageTest">
-        <test-method is-config="true" signature="startingBrowser(java.lang.String,java.lang.String)[pri:0, instance:com.testrunner.HomePageTest@5bda8e08]" started-at="2023-09-12T14:27:09 IST" name="startingBrowser" finished-at="2023-09-12T14:27:27 IST" duration-ms="17948" status="PASS">
+        <test-method is-config="true" signature="startingBrowser(java.lang.String,java.lang.String)[pri:0, instance:com.testrunner.HomePageTest@5bda8e08]" started-at="2023-09-13T10:58:00 IST" name="startingBrowser" finished-at="2023-09-13T10:58:12 IST" duration-ms="12410" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,19 +23,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startingBrowser -->
-        <test-method signature="test1()[pri:0, instance:com.testrunner.HomePageTest@5bda8e08]" started-at="2023-09-12T14:27:27 IST" name="test1" finished-at="2023-09-12T14:27:35 IST" duration-ms="7161" status="PASS">
+        <test-method signature="test1()[pri:0, instance:com.testrunner.HomePageTest@5bda8e08]" started-at="2023-09-13T10:58:12 IST" name="test1" finished-at="2023-09-13T10:58:16 IST" duration-ms="3301" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method signature="test2()[pri:1, instance:com.testrunner.HomePageTest@5bda8e08]" started-at="2023-09-12T14:27:35 IST" name="test2" finished-at="2023-09-12T14:27:55 IST" duration-ms="20469" status="PASS">
+        <test-method signature="test2()[pri:1, instance:com.testrunner.HomePageTest@5bda8e08]" started-at="2023-09-13T10:58:16 IST" name="test2" finished-at="2023-09-13T10:58:30 IST" duration-ms="14719" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method signature="test3()[pri:2, instance:com.testrunner.HomePageTest@5bda8e08]" started-at="2023-09-12T14:27:55 IST" name="test3" finished-at="2023-09-12T14:28:05 IST" duration-ms="10250" status="PASS">
+        <test-method signature="test3()[pri:2, instance:com.testrunner.HomePageTest@5bda8e08]" started-at="2023-09-13T10:58:30 IST" name="test3" finished-at="2023-09-13T10:59:06 IST" duration-ms="35413" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test3 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testrunner.HomePageTest@5bda8e08]" started-at="2023-09-12T14:28:05 IST" name="tearDown" finished-at="2023-09-12T14:28:07 IST" duration-ms="1258" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testrunner.HomePageTest@5bda8e08]" started-at="2023-09-13T10:59:06 IST" name="tearDown" finished-at="2023-09-13T10:59:07 IST" duration-ms="1192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

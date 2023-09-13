@@ -6,6 +6,7 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.testrunner.HomePageTest"/>
+      <!-- <class name="com.testrunner.LoginTest"/> -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

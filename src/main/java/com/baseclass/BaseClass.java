@@ -16,7 +16,7 @@ public class BaseClass {
 
 	protected static WebDriver driver;
 	
-	public WebDriver getDriver() {
+	public static WebDriver getDriver() {
 		return driver;
 	}
 

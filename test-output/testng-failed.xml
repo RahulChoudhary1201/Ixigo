@@ -8,8 +8,8 @@
       <class name="com.testrunner.HomePageTest">
         <methods>
           <include name="startingBrowser"/>
-          <include name="test2"/>
           <include name="tearDown"/>
+          <include name="test3"/>
         </methods>
       </class> <!-- com.testrunner.HomePageTest -->
     </classes>

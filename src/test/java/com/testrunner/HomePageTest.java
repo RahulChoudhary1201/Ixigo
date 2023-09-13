@@ -38,6 +38,17 @@ public class HomePageTest extends BaseClass {
 	@Test(priority = 2)
 	public void test3() {
 		fb = fsr.bookFlight();
+		String fbTitle=fb.getTitle();
+		System.out.println("Got the Page Title: "+fbTitle);
+		String flightName = fb.getFlightName();
+		System.out.println("Flight Name: "+flightName);
+		String duration = fb.getFlightDuration();
+		System.out.println("Flights Duration: "+duration);
+		String fDelay=fb.getFlightDelay();
+		System.out.println("Flights Delay: "+fDelay);
+		String totalPrice = fb.getTotalPrice();
+		System.out.println("Total Price of flight: "+totalPrice);
+		fb.continueBookBtn();
 	}
 
 }
