@@ -2,7 +2,6 @@ package com.utils;
 
 import java.time.Duration;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -30,7 +29,7 @@ public class ActionWeb {
 	}
 	
 	public void navigateToHome() {
-		driver.findElement(By.id("ixiLogoImg")).click();
+		driver.navigate().to("https://www.ixigo.com/");
 		waitingForTitle("ixigo - Best Travel Website, Book Flights, Trains & Buses Online");
 	}
 	

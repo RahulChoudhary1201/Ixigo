@@ -30,7 +30,7 @@ public class HomePage extends ActionWeb {
 	private By passNumber = By.xpath(
 			"//span[contains(@class,'counter-item u-text-center u-ib')  and @data-val='2']");
 	private By className = By.cssSelector(".radio-list-item[data-index='1']");
-
+	private By offersIcon = By.xpath("//a[@href='/offers']");
 	public String getTitle() {
 		return driver.getTitle();
 	}
@@ -40,9 +40,10 @@ public class HomePage extends ActionWeb {
 		driver.findElement(clearBtn).click();
 		Type(driver.findElement(src), source);
 		waiting(driver.findElement(suggestedEle));
+		Thread.sleep(1000);
 		driver.findElement(suggestedEle).click();
 		Type(driver.findElement(dest), destination);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		driver.findElement(sEleDestination).click();
 	}
 
@@ -63,7 +64,7 @@ public class HomePage extends ActionWeb {
 
 		}
 		WebElement dayEle = driver.findElement(By.xpath(
-				"//div[@class='day has-info' and text()='" + day + "']"));
+				"(//div[@class='day has-info' and text()='" + day + "'])[1]"));
 		dayEle.click();
 	}
 
@@ -73,6 +74,18 @@ public class HomePage extends ActionWeb {
 		driver.findElement(className).click();
 		driver.findElement(searchBtn).click();
 		return new FlightSearchResult(driver);
+	}
+
+	public OffersPage navigatingToOffersPage() {
+		try {
+			navigateToHome();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		driver.findElement(offersIcon).click();
+		return new OffersPage(driver);
+
 	}
 
 }
