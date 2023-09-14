@@ -1,5 +1,7 @@
 package com.testrunner;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -9,8 +11,9 @@ import com.baseclass.BaseClass;
 
 public class OffersPageTest extends BaseClass {
 
-	@Test(dependsOnGroups = {"flight"})
-	public void OfferDetailsTest() {
+//	@Test(dependsOnGroups = {"flight"})
+	@Test
+	public void OfferDetailsTest() throws IOException, InterruptedException {
 		HomePage hp = new HomePage(driver);
 		OffersPage ofp = hp.navigatingToOffersPage();
 		String offerPageTitle = ofp.getOfferPageTitle();

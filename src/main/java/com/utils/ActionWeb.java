@@ -1,7 +1,12 @@
 package com.utils;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -31,6 +36,16 @@ public class ActionWeb {
 	public void navigateToHome() {
 		driver.navigate().to("https://www.ixigo.com/");
 		waitingForTitle("ixigo - Best Travel Website, Book Flights, Trains & Buses Online");
+	}
+	
+	public void takeScreenShots(WebElement ele,String name) throws IOException {
+		File source=ele.getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(source, new File(System.getProperty("user.dir")+"\\ScreenShots\\"+name+".png"));
+	}
+	
+	public void scrollingToWebElement(WebElement element) {
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("arguments[0].scrollIntoView(true);", element);
 	}
 	
 }

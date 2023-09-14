@@ -1,5 +1,6 @@
 package com.Objects;
 
+import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -29,8 +30,11 @@ public class OffersPage extends ActionWeb{
 		return offerList.size();
 	}
 	
-	public void displayOffersName() {
+	public void displayOffersName() throws IOException, InterruptedException {
 		int i=1;
+		WebElement allOffers = driver.findElement(By.xpath("//div[@class='post-list']"));
+		scrollingToWebElement(allOffers);
+		takeScreenShots(allOffers,allOffers.getAttribute("class"));
 		offerList = driver.findElements(allOfferHeading);
 		for (WebElement webElement : offerList) {
 			String text = webElement.getText();
