@@ -11,8 +11,8 @@ import com.baseclass.BaseClass;
 
 public class OffersPageTest extends BaseClass {
 
-//	@Test(dependsOnGroups = {"flight"})
-	@Test
+	@Test(dependsOnGroups = {"flight"})
+//	@Test
 	public void OfferDetailsTest() throws IOException, InterruptedException {
 		HomePage hp = new HomePage(driver);
 		OffersPage ofp = hp.navigatingToOffersPage();
