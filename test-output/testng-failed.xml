@@ -5,6 +5,20 @@
   <parameter name="url" value="https://www.ixigo.com/"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="com.testrunner.OffersPageTest">
+        <methods>
+          <include name="startingBrowser"/>
+          <include name="OfferDetailsTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.testrunner.OffersPageTest -->
+      <class name="com.testrunner.CustomerServicePageTest">
+        <methods>
+          <include name="VerifyService"/>
+          <include name="startingBrowser"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.testrunner.CustomerServicePageTest -->
       <class name="com.testrunner.HomePageTest">
         <methods>
           <include name="startingBrowser"/>

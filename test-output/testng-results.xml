@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-14T20:43:03 IST" name="Suite" finished-at="2023-09-14T20:43:23 IST" duration-ms="19814">
+  <suite started-at="2023-09-14T22:17:20 IST" name="Suite" finished-at="2023-09-14T22:17:41 IST" duration-ms="21134">
     <groups>
+      <group name="offer">
+        <method signature="OffersPageTest.OfferDetailsTest()[pri:0, instance:com.testrunner.OffersPageTest@15de0b3c]" name="OfferDetailsTest" class="com.testrunner.OffersPageTest"/>
+      </group> <!-- offer -->
       <group name="flight">
-        <method signature="HomePageTest.EnteringDetailsTest()[pri:0, instance:com.testrunner.HomePageTest@9d5509a]" name="EnteringDetailsTest" class="com.testrunner.HomePageTest"/>
-        <method signature="HomePageTest.CheapestFlightTest()[pri:0, instance:com.testrunner.HomePageTest@9d5509a]" name="CheapestFlightTest" class="com.testrunner.HomePageTest"/>
-        <method signature="HomePageTest.BookingFlightTest()[pri:0, instance:com.testrunner.HomePageTest@9d5509a]" name="BookingFlightTest" class="com.testrunner.HomePageTest"/>
+        <method signature="HomePageTest.EnteringDetailsTest()[pri:0, instance:com.testrunner.HomePageTest@3b0090a4]" name="EnteringDetailsTest" class="com.testrunner.HomePageTest"/>
+        <method signature="HomePageTest.CheapestFlightTest()[pri:0, instance:com.testrunner.HomePageTest@3b0090a4]" name="CheapestFlightTest" class="com.testrunner.HomePageTest"/>
+        <method signature="HomePageTest.BookingFlightTest()[pri:0, instance:com.testrunner.HomePageTest@3b0090a4]" name="BookingFlightTest" class="com.testrunner.HomePageTest"/>
       </group> <!-- flight -->
     </groups>
-    <test started-at="2023-09-14T20:43:03 IST" name="Test" finished-at="2023-09-14T20:43:23 IST" duration-ms="19814">
+    <test started-at="2023-09-14T22:17:20 IST" name="Test" finished-at="2023-09-14T22:17:41 IST" duration-ms="21134">
       <class name="com.testrunner.HomePageTest">
-        <test-method is-config="true" signature="startingBrowser(java.lang.String,java.lang.String)[pri:0, instance:com.testrunner.HomePageTest@9d5509a]" started-at="2023-09-14T20:42:55 IST" name="startingBrowser" finished-at="2023-09-14T20:43:03 IST" duration-ms="8649" status="PASS">
+        <test-method is-config="true" signature="startingBrowser(java.lang.String,java.lang.String)[pri:0, instance:com.testrunner.HomePageTest@3b0090a4]" started-at="2023-09-14T22:17:13 IST" name="startingBrowser" finished-at="2023-09-14T22:17:20 IST" duration-ms="7194" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -28,25 +31,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startingBrowser -->
-        <test-method signature="EnteringDetailsTest()[pri:0, instance:com.testrunner.HomePageTest@9d5509a]" started-at="2023-09-14T20:43:03 IST" name="EnteringDetailsTest" finished-at="2023-09-14T20:43:07 IST" duration-ms="3744" status="PASS">
+        <test-method signature="EnteringDetailsTest()[pri:0, instance:com.testrunner.HomePageTest@3b0090a4]" started-at="2023-09-14T22:17:20 IST" name="EnteringDetailsTest" finished-at="2023-09-14T22:17:23 IST" duration-ms="3231" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EnteringDetailsTest -->
-        <test-method signature="CheapestFlightTest()[pri:0, instance:com.testrunner.HomePageTest@9d5509a]" started-at="2023-09-14T20:43:07 IST" name="CheapestFlightTest" finished-at="2023-09-14T20:43:14 IST" depends-on-methods="com.testrunner.HomePageTest.EnteringDetailsTest" duration-ms="7288" status="PASS">
+        <test-method signature="CheapestFlightTest()[pri:0, instance:com.testrunner.HomePageTest@3b0090a4]" started-at="2023-09-14T22:17:23 IST" name="CheapestFlightTest" finished-at="2023-09-14T22:17:29 IST" depends-on-methods="com.testrunner.HomePageTest.EnteringDetailsTest" duration-ms="5760" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheapestFlightTest -->
-        <test-method signature="BookingFlightTest()[pri:0, instance:com.testrunner.HomePageTest@9d5509a]" started-at="2023-09-14T20:43:14 IST" name="BookingFlightTest" finished-at="2023-09-14T20:43:18 IST" depends-on-methods="com.testrunner.HomePageTest.CheapestFlightTest" duration-ms="3788" status="PASS">
+        <test-method signature="BookingFlightTest()[pri:0, instance:com.testrunner.HomePageTest@3b0090a4]" started-at="2023-09-14T22:17:29 IST" name="BookingFlightTest" finished-at="2023-09-14T22:17:33 IST" depends-on-methods="com.testrunner.HomePageTest.CheapestFlightTest" duration-ms="4142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BookingFlightTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testrunner.HomePageTest@9d5509a]" started-at="2023-09-14T20:43:23 IST" name="tearDown" finished-at="2023-09-14T20:43:24 IST" duration-ms="1206" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testrunner.HomePageTest@3b0090a4]" started-at="2023-09-14T22:17:41 IST" name="tearDown" finished-at="2023-09-14T22:17:43 IST" duration-ms="1361" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.testrunner.HomePageTest -->
+      <class name="com.testrunner.CustomerServicePageTest">
+        <test-method signature="VerifyService()[pri:0, instance:com.testrunner.CustomerServicePageTest@489115ef]" started-at="2023-09-14T22:17:37 IST" name="VerifyService" depends-on-groups="offer" finished-at="2023-09-14T22:17:41 IST" duration-ms="4093" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyService -->
+      </class> <!-- com.testrunner.CustomerServicePageTest -->
       <class name="com.testrunner.OffersPageTest">
-        <test-method signature="OfferDetailsTest()[pri:0, instance:com.testrunner.OffersPageTest@6ed3ccb2]" started-at="2023-09-14T20:43:18 IST" name="OfferDetailsTest" depends-on-groups="flight" finished-at="2023-09-14T20:43:23 IST" duration-ms="4951" status="PASS">
+        <test-method signature="OfferDetailsTest()[pri:0, instance:com.testrunner.OffersPageTest@15de0b3c]" started-at="2023-09-14T22:17:33 IST" name="OfferDetailsTest" depends-on-groups="flight" finished-at="2023-09-14T22:17:37 IST" duration-ms="3860" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OfferDetailsTest -->

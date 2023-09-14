@@ -31,6 +31,7 @@ public class HomePage extends ActionWeb {
 			"//span[contains(@class,'counter-item u-text-center u-ib')  and @data-val='2']");
 	private By className = By.cssSelector(".radio-list-item[data-index='1']");
 	private By offersIcon = By.xpath("//a[@href='/offers']");
+	private By helpCenter = By.xpath("(//a[@href='/help-center'])[1]");
 	public String getTitle() {
 		return driver.getTitle();
 	}
@@ -86,6 +87,17 @@ public class HomePage extends ActionWeb {
 		driver.findElement(offersIcon).click();
 		return new OffersPage(driver);
 
+	}
+	
+	public CustomerServicePage navigateToCustomerService() {
+		try {
+			navigateToHome();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		driver.findElement(helpCenter).click();
+		return new CustomerServicePage(driver);
+		
 	}
 
 }
