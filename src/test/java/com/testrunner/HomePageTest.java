@@ -14,7 +14,7 @@ public class HomePageTest extends BaseClass {
 	FlightSearchResult fsr;
 	FlightBooking fb;
 
-	@Test(priority = 0)
+	@Test( groups="flight")
 	public void EnteringDetailsTest() throws InterruptedException {
 		HomePage hp = new HomePage(driver);
 		String homeTitle = hp.getTitle();
@@ -25,7 +25,7 @@ public class HomePageTest extends BaseClass {
 		fsr = hp.setPassAndClass();
 	}
 
-	@Test(priority = 1)
+	@Test(dependsOnMethods = {"EnteringDetailsTest"},groups="flight")
 	public void CheapestFlightTest() {
 		ActionWeb aw = new ActionWeb(driver);
 		aw.waitingForTitle("Mumbai - Goa, Business Flights, 22 Dec");
@@ -35,7 +35,7 @@ public class HomePageTest extends BaseClass {
 		String flight = fsr.getFlightsDetails();
 		System.out.println("Cheapest flight we Found is: " + flight);
 	}
-	@Test(priority = 2)
+	@Test(dependsOnMethods = {"CheapestFlightTest"},groups="flight")
 	public void BookingFlightTest() {
 		fb = fsr.bookFlight();
 		String fbTitle=fb.getTitle();

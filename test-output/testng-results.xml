@@ -2,12 +2,17 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-14T15:36:21 IST" name="Suite" finished-at="2023-09-14T15:36:53 IST" duration-ms="31874">
+  <suite started-at="2023-09-14T17:22:36 IST" name="Suite" finished-at="2023-09-14T17:22:55 IST" duration-ms="19462">
     <groups>
+      <group name="flight">
+        <method signature="HomePageTest.EnteringDetailsTest()[pri:0, instance:com.testrunner.HomePageTest@9d5509a]" name="EnteringDetailsTest" class="com.testrunner.HomePageTest"/>
+        <method signature="HomePageTest.CheapestFlightTest()[pri:0, instance:com.testrunner.HomePageTest@9d5509a]" name="CheapestFlightTest" class="com.testrunner.HomePageTest"/>
+        <method signature="HomePageTest.BookingFlightTest()[pri:0, instance:com.testrunner.HomePageTest@9d5509a]" name="BookingFlightTest" class="com.testrunner.HomePageTest"/>
+      </group> <!-- flight -->
     </groups>
-    <test started-at="2023-09-14T15:36:21 IST" name="Test" finished-at="2023-09-14T15:36:53 IST" duration-ms="31874">
+    <test started-at="2023-09-14T17:22:36 IST" name="Test" finished-at="2023-09-14T17:22:55 IST" duration-ms="19462">
       <class name="com.testrunner.HomePageTest">
-        <test-method is-config="true" signature="startingBrowser(java.lang.String,java.lang.String)[pri:0, instance:com.testrunner.HomePageTest@185a6e9]" started-at="2023-09-14T15:36:14 IST" name="startingBrowser" finished-at="2023-09-14T15:36:21 IST" duration-ms="6874" status="PASS">
+        <test-method is-config="true" signature="startingBrowser(java.lang.String,java.lang.String)[pri:0, instance:com.testrunner.HomePageTest@9d5509a]" started-at="2023-09-14T17:22:29 IST" name="startingBrowser" finished-at="2023-09-14T17:22:36 IST" duration-ms="7310" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,25 +28,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startingBrowser -->
-        <test-method signature="EnteringDetailsTest()[pri:0, instance:com.testrunner.HomePageTest@185a6e9]" started-at="2023-09-14T15:36:21 IST" name="EnteringDetailsTest" finished-at="2023-09-14T15:36:25 IST" duration-ms="4010" status="PASS">
+        <test-method signature="EnteringDetailsTest()[pri:0, instance:com.testrunner.HomePageTest@9d5509a]" started-at="2023-09-14T17:22:36 IST" name="EnteringDetailsTest" finished-at="2023-09-14T17:22:39 IST" duration-ms="3396" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EnteringDetailsTest -->
-        <test-method signature="CheapestFlightTest()[pri:1, instance:com.testrunner.HomePageTest@185a6e9]" started-at="2023-09-14T15:36:25 IST" name="CheapestFlightTest" finished-at="2023-09-14T15:36:41 IST" duration-ms="16045" status="PASS">
+        <test-method signature="CheapestFlightTest()[pri:0, instance:com.testrunner.HomePageTest@9d5509a]" started-at="2023-09-14T17:22:39 IST" name="CheapestFlightTest" finished-at="2023-09-14T17:22:47 IST" depends-on-methods="com.testrunner.HomePageTest.EnteringDetailsTest" duration-ms="7781" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheapestFlightTest -->
-        <test-method signature="BookingFlightTest()[pri:2, instance:com.testrunner.HomePageTest@185a6e9]" started-at="2023-09-14T15:36:41 IST" name="BookingFlightTest" finished-at="2023-09-14T15:36:45 IST" duration-ms="3768" status="PASS">
+        <test-method signature="BookingFlightTest()[pri:0, instance:com.testrunner.HomePageTest@9d5509a]" started-at="2023-09-14T17:22:47 IST" name="BookingFlightTest" finished-at="2023-09-14T17:22:51 IST" depends-on-methods="com.testrunner.HomePageTest.CheapestFlightTest" duration-ms="3632" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BookingFlightTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testrunner.HomePageTest@185a6e9]" started-at="2023-09-14T15:36:53 IST" name="tearDown" finished-at="2023-09-14T15:36:54 IST" duration-ms="1179" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testrunner.HomePageTest@9d5509a]" started-at="2023-09-14T17:22:55 IST" name="tearDown" finished-at="2023-09-14T17:22:57 IST" duration-ms="1261" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.testrunner.HomePageTest -->
       <class name="com.testrunner.OffersPageTest">
-        <test-method signature="OfferDetailsTest()[pri:0, instance:com.testrunner.OffersPageTest@62ddbd7e]" started-at="2023-09-14T15:36:45 IST" name="OfferDetailsTest" finished-at="2023-09-14T15:36:53 IST" duration-ms="8017" status="PASS">
+        <test-method signature="OfferDetailsTest()[pri:0, instance:com.testrunner.OffersPageTest@6ed3ccb2]" started-at="2023-09-14T17:22:51 IST" name="OfferDetailsTest" depends-on-groups="flight" finished-at="2023-09-14T17:22:55 IST" duration-ms="4613" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OfferDetailsTest -->
