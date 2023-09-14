@@ -77,7 +77,7 @@ public class FlightBooking extends ActionWeb {
 		} catch (Exception e) {
 			System.out.println("Login Failed");
 		} finally {
-			System.out.println(getErrorMsg());
+			System.out.println("Login failed because "+getErrorMsg());
 		}
 	}
 }
