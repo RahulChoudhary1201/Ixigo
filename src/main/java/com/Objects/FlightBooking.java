@@ -60,9 +60,10 @@ public class FlightBooking extends ActionWeb {
 					By.xpath("//div[@class='login-button']/button"));
 			if (loginBtn.isEnabled()) {
 				loginBtn.click();
-			} if(driver.findElement(errorMsg).isDisplayed()) {
-				return;
-			}
+				if(driver.findElement(errorMsg).isDisplayed()) {
+					return;
+				}
+			} 
 			waiting(driver
 					.findElement(By.xpath("//div[@class='otp-input-group']")));
 			for (int i = 0; i < 6; i++) {
