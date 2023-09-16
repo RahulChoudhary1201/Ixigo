@@ -2,7 +2,6 @@ package com.Objects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 import com.utils.ActionWeb;
 
@@ -49,34 +48,6 @@ public class FlightBooking extends ActionWeb {
 
 	public void continueBookBtn() {
 		driver.findElement(continueBooking).click();
-		waiting(driver.findElement(
-				By.xpath("//input[@class='c-input u-v-align-bottom']")));
-		driver.findElement(
-				By.xpath("//input[@class='c-input u-v-align-bottom']"))
-				.sendKeys("1234567890");
-
-		try {
-			WebElement loginBtn = driver.findElement(
-					By.xpath("//div[@class='login-button']/button"));
-			if (loginBtn.isEnabled()) {
-				loginBtn.click();
-			} else if(driver.findElement(errorMsg).isDisplayed()) {
-				return;
-			}
-			waiting(driver
-					.findElement(By.xpath("//div[@class='otp-input-group']")));
-			for (int i = 0; i < 6; i++) {
-				driver.findElement(By.xpath("//input[@id='otp-" + i + "']"))
-						.sendKeys("" + i + "");
-			}
-			waiting(driver.findElement(errorMsg));
-			String text = getErrorMsg();
-			System.out.println(text);
-
-		} catch (Exception e) {
-			System.out.println("Login Failed");
-		} finally {
-			System.out.println("Login failed because "+getErrorMsg());
-		}
+		login();
 	}
 }
