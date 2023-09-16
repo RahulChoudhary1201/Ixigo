@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.time.Duration;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
@@ -14,7 +16,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ActionWeb {
 	private static WebDriver driver;
-
+	protected Logger log = LogManager.getLogger(getClass());
 	public ActionWeb(WebDriver driver) {
 		ActionWeb.driver = driver;
 	}
