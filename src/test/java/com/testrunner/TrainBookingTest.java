@@ -18,7 +18,6 @@ public class TrainBookingTest extends BaseClass{
 		tb.setSrcAndDest("Pune", "Durg");
 		tb.setDate("22", "December", "2023");
 		tb.searchClick();
-		Thread.sleep(5000);
 	}
 
 }
