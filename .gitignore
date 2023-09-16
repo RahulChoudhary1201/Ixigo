@@ -1,5 +1,4 @@
 test-output/
 logs/
 ScreenShots/
-*.class
 **/*.class
