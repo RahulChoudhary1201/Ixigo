@@ -8,8 +8,8 @@ import com.baseclass.BaseClass;
 
 public class TrainBookingTest extends BaseClass{
 	
-//	@Test(dependsOnGroups = {"offer"}, groups = {"train"})
-	@Test
+	@Test(dependsOnGroups = {"offer"}, groups = {"train"})
+//	@Test
 	public void srcAnddestSettingTest() throws InterruptedException {
 		HomePage hp = new HomePage(driver);
 		TrainBooking tb= hp.navigateToTrains();
