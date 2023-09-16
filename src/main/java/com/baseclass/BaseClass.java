@@ -81,7 +81,7 @@ public class BaseClass {
 		try {
 			setDriver(browserName, url);
 		} catch (Exception e) {
-			System.out.println("Error..... " + e.getStackTrace());
+			System.out.println("Error..... " + e.getStackTrace().toString());
 		}
 	}
 	@AfterSuite

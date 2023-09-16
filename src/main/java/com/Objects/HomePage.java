@@ -32,6 +32,8 @@ public class HomePage extends ActionWeb {
 	private By className = By.cssSelector(".radio-list-item[data-index='1']");
 	private By offersIcon = By.xpath("//a[@href='/offers']");
 	private By helpCenter = By.xpath("(//a[@href='/help-center'])[1]");
+	private By trainIcon = By.xpath("//a[@href='/trains']");
+	
 	public String getTitle() {
 		return driver.getTitle();
 	}
@@ -65,7 +67,7 @@ public class HomePage extends ActionWeb {
 
 		}
 		WebElement dayEle = driver.findElement(By.xpath(
-				"(//div[@class='day has-info' and text()='" + day + "'])[1]"));
+				"(//div[contains(@class,'day')][contains(text(),'" + day + "')])[1]"));
 		dayEle.click();
 	}
 
@@ -98,6 +100,16 @@ public class HomePage extends ActionWeb {
 		driver.findElement(helpCenter).click();
 		return new CustomerServicePage(driver);
 		
+	}
+	
+	public TrainBooking navigateToTrains() {
+		try {
+			navigateToHome();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		driver.findElement(trainIcon).click();
+		return new TrainBooking(driver);
 	}
 
 }

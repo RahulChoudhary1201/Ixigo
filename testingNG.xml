@@ -5,9 +5,6 @@
 	<parameter name="url" value="https://www.ixigo.com/"></parameter>
 	<test thread-count="2" name="Test">
 		<classes>
-			<class name="com.testrunner.HomePageTest" />
-			<class name="com.testrunner.OffersPageTest" />
-			<class name="com.testrunner.CustomerServicePageTest" />
 			<class name="com.testrunner.TrainBookingTest" />
 		</classes>
 	</test> <!-- Test -->

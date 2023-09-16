@@ -11,7 +11,7 @@ import com.baseclass.BaseClass;
 
 public class CustomerServicePageTest extends BaseClass {
 
-	@Test(dependsOnGroups  = {"offer"})
+	@Test(dependsOnGroups  = {"offer"},groups = {"offer"})
 	public void VerifyService() throws IOException {
 		HomePage hp = new HomePage(driver);
 		CustomerServicePage csp = hp.navigateToCustomerService();
