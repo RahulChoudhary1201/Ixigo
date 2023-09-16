@@ -100,6 +100,7 @@ public class BaseClass {
 				+ "\\Reports\\index.html";
 		Desktop.getDesktop().browse(new File(reportPath).toURI());
 	}
+	
 	public String getScreenshot(String testCaseName, WebDriver driver)
 			throws IOException {
 		TakesScreenshot ts = (TakesScreenshot) driver;
