@@ -1,8 +1,6 @@
 test-output/
 logs/
 ScreenShots/
-<<<<<<< HEAD
 *.class
-=======
->>>>>>> feature1
 **/*.class
+Reports/

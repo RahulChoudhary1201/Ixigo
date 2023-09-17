@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import com.baseclass.BaseClass;
 import com.utils.ActionWeb;
 
+//This is for testing the classes and methods
 public class LoginTest extends BaseClass {
 	By errorMsg = By.xpath("//div[@class='form-error-msg']");
 	public String getErrorMsg() {

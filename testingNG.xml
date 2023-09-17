@@ -5,7 +5,7 @@
 	<parameter name="url" value="https://www.ixigo.com/"></parameter>
 	<test thread-count="2" name="Test">
 		<classes>
-			<class name="com.testrunner.LoginTest" />
+			<class name="com.testrunner.TrainBookingTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -72,6 +72,7 @@ public class HomePageTest extends BaseClass {
 		System.out.println("Total Price of flight: "+totalPrice);
 		log.info("Clicking continue button.");
 		fb.continueBookBtn();
+		log.info("Trying to login.");
 	}
 
 }

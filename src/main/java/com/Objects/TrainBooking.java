@@ -49,9 +49,9 @@ public class TrainBooking extends ActionWeb {
 		}
 	}
 
-	public void searchClick() {
+	public TrainSearchResult searchClick() {
 		driver.findElement(searchBtn).click();
-
+		return new TrainSearchResult(driver);
 	}
 
 }
