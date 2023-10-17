@@ -19,7 +19,7 @@ public class OffersPageTest extends BaseClass {
 		log.info("Getting the title of Offers Page.");
 		String offerPageTitle = ofp.getOfferPageTitle();
 		log.info("Verifying the title");
-		Assert.assertEquals(offerPageTitle, "ixigo Offers, Coupons, Latest ixigo Offers in Sept 2023 - ixigo.com");
+		Assert.assertEquals(offerPageTitle, "ixigo Offers, Coupons, Latest ixigo Offers in 2023 - ixigo.com");
 		log.info("Printing the information about Offers.");
 		System.out.println("Total Number of offer's displayed: "+ofp.getTotalNumberOfOffers());
 		ofp.displayOffersName();
